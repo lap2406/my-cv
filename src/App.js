@@ -1,8 +1,7 @@
 import React from 'react';
-import { Button } from 'antd';
-// import { useNavigate } from "react-router";
-// import { routerLinks } from 'utils';
-import QRcodeGenerate from 'layout/qrcode';
+import Root from "./routes/root";
+
+
 import("./App.less");
 
 function App() {
@@ -11,7 +10,11 @@ function App() {
   return (
     <div className="App">
       {/* <button className="font-light text-red" onClick={()=> navigate(routerLinks("QR"))}>Button</button> */}
-      {QRcodeGenerate()}
+      <Routers>
+          <Route path="/" exact component={Home()} />
+          <Route path="/qr" component={QRcodeGenerate()} />
+          {/* <Route component={} /> */}
+      </Routers>
     </div>
   );
 }
