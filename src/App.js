@@ -1,15 +1,17 @@
 import React from 'react';
 import { Button } from 'antd';
+// import { useNavigate } from "react-router";
+// import { routerLinks } from 'utils';
+import QRcodeGenerate from 'layout/qrcode';
 import("./App.less");
 
 function App() {
+  // const navigate = useNavigate();
+
   return (
     <div className="App">
-      <Button type="primary" >Button</Button>
-      <button className="font-light text-red">Button</button>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-    </h1>
+      {/* <button className="font-light text-red" onClick={()=> navigate(routerLinks("QR"))}>Button</button> */}
+      {QRcodeGenerate()}
     </div>
   );
 }
