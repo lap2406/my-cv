@@ -3,6 +3,8 @@ import React from "react";
 
 const QRcodeGenerate = () => {
   const [text, setText] = React.useState('');
+  const [number, setNumber] = React.useState();
+  
 
   return (
     <div className="w-screen h-screen flex">
@@ -20,6 +22,10 @@ const QRcodeGenerate = () => {
           value={text}
           onChange={(e) => setText(e.target.value)}
         />
+        <Input value={text}
+          onChange={(e) => setNumber(Number(e.target.value) - 3600000)}
+        />
+        {number}
     </div>
     </div>
   );

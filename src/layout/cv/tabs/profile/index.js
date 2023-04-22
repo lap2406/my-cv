@@ -1,0 +1,140 @@
+import React from "react";
+
+const Profile = () => {
+
+  return (
+    <div className="">
+      <div className="text-xl font-bold">
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+      </div>
+      <div className="text-xl font-bold">
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+      </div>
+      <div className="text-xl font-bold">
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+      </div>
+      <div className="text-xl font-bold">
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+      </div>
+      <div className="text-xl font-bold">
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+        Profile
+      </div>
+    </div>
+  );
+}
+export default Profile;

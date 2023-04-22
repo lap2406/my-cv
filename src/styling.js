@@ -1,6 +1,5 @@
 import React from 'react';
-import "index.less";
-import('index.less');
+import "assets/style/global.less";
 
 const Component = ({ children }) => <>{children}</>;
 export default Component;
