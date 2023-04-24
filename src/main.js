@@ -10,7 +10,7 @@ const MainRouter = () => {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Home />,
+      element: <CV />,
       errorElement: <ErrorPage />,
     },
     {

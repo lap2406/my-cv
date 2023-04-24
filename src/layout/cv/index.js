@@ -3,9 +3,11 @@ import "./index.less";
 import React from "react";
 import Social from "./social";
 import { Tabs } from 'antd';
-import profileImg from "assets/icon/profile.svg"
-import { UserOutlined } from "@ant-design/icons";
+import { CodeFilled, FundFilled, IdcardFilled, ProjectFilled, UserOutlined } from "@ant-design/icons";
 import Profile from "./tabs/profile";
+import WorkExperience from "./tabs/work-experience";
+import Projects from "./tabs/projects";
+import Orther from "./tabs/orther";
 
 const CV = () => {
 
@@ -17,28 +19,47 @@ const CV = () => {
     {
       key: '1',
       label: (
-        <div className="flex justify-center items-center gap-2">
-          Profile <UserOutlined />
+        <div className="flex justify-center items-center">
+          <IdcardFilled />Profile
         </div>
       ),
       children: <Profile />,
     },
+    
     {
       key: '2',
-      label: `Tab 2`,
-      children: `Content of Tab Pane 2`,
+      label: (
+        <div className="flex justify-center items-center">
+          <CodeFilled />Work experience
+        </div>
+      ),
+      children: <WorkExperience />,
     },
     {
       key: '3',
-      label: `Tab 3`,
-      children: `Content of Tab Pane 3`,
+      label: (
+        <div className="flex justify-center items-center">
+          <ProjectFilled />Projects
+        </div>
+      ),
+      children: <Projects />,
     },
+    {
+      key: '4',
+      label: (
+        <div className="flex justify-center items-center">
+          <FundFilled />Orther
+        </div>
+      ),
+      children: <Orther />,
+    },
+    
   ]
 
   return (
-    <div className="w-screen h-screen overflow-hidden snap-y flex cv bg-cover fixed top-0 left-0 right-0 bottom-0 backdrop-blur">
-      <div className="md:w-9/12 w-full md:h-4/6 h-full p-2 md:p-0 absolute -translate-x-2/4 -translate-y-2/4 top-1/2 left-1/2 bg-white rounded-sm bg-opacity-60 shadow-md">
-        <div className="w-full h-full relative grid grid-cols-3">
+    <div className="w-screen md:h-screen h-auto md:overflow-hidden snap-y flex cv bg-cover fixed top-0 left-0 right-0 bottom-0 backdrop-blur intro-x">
+      <div className="md:w-9/12 w-full md:h-4/6 h-auto p-2 md:p-0 absolute -translate-x-2/4 -translate-y-2/4 top-1/2 left-1/2 bg-white rounded-sm bg-opacity-60 shadow-md">
+        <div className="w-full md:h-full h-auto overflow-auto relative grid grid-cols-3">
           <div className="md:col-span-1 col-span-3">
             <Social />
           </div>

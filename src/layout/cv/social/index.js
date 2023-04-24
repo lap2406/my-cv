@@ -2,7 +2,6 @@ import React from "react";
 import "./index.less";
 import facebookIcon from "assets/icon/facebook.svg";
 import githubIcon from "assets/icon/github.svg";
-import { Link } from 'react-router-dom';
 
 const Social = () => {
 
@@ -11,7 +10,7 @@ const Social = () => {
     "github": "https://github.com/lap2406",
   }
   const handleSocial = (type) => {
-    <Link to={socialLink[type]}/>;
+    window.location.href = socialLink[type]
   }
 
   return (

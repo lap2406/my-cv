@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,17 +6,63 @@
 @import "antd/dist/reset.css";
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif !important;
+  @apply text-sm overflow-x-hidden text-gray-500 bg-blue-50;
+
+  .swal2-close:focus {
+    @apply shadow-none;
+  }
   background: url("../images/background.jpg") no-repeat;
   background-size: cover;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*> {
+  .loop-intro-x(9);
+}
+
+.loop-intro-x(@counter) when (@counter > 0) {
+  .loop-intro-x((@counter - 1)); // next iteration
+
+  .intro-x:nth-child(@{counter}) {
+    @apply translate-x-12;
+  }
+
+  .-intro-x:nth-child(@{counter}) {
+    @apply -translate-x-12;
+  }
+
+  .-intro-x:nth-child(@{counter}),
+  .intro-x:nth-child(@{counter}) {
+    opacity: 0;
+    z-index: (10 - @counter);
+    animation: intro-x-animation .4s ease-in-out .33333s;
+    animation-fill-mode: forwards;
+    animation-delay:~"0.@{counter}s"
+  }
+}
+
+@keyframes intro-x-animation {
+  to {
+    @apply opacity-100 -translate-x-0;
+  }
+}
+
+.ant-btn {
+  @apply border border-gray-300 text-sm rounded-lg mr-2 px-2;
+
+  &.ant-btn-primary {
+    @apply bg-blue-500 text-white;
+  }
+}
+.ant-tabs {
+  font-family: 'Open Sans'
+}
+#perfect-scroll {
+
+
+  &::-webkit-scrollbar {
+    // display: none;
+  }
+
+
 }

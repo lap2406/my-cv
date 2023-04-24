@@ -1,15 +1,33 @@
 .cv {
   .ant-tabs {
+    @apply h-full;
+
     .ant-tabs-nav {
       position: sticky;
       top: 0;
       background: rgba(255, 255, 255, 0.9);
       z-index: 1;
       @apply px-3 backdrop-blur-sm;
+
+      .ant-tabs-tab {
+        @apply text-sm;
+      }
+
+      .ant-tabs-tab-active {
+        @apply font-semibold text-base;
+      }
     }
 
     .ant-tabs-content-holder {
-      @apply px-3 py-2;
+      @apply px-3 py-2 h-full;
+
+      .ant-tabs-content {
+        @apply h-full;
+
+        .ant-tabs-tabpane {
+          @apply h-full;
+        }
+      }
     }
   }
 }
