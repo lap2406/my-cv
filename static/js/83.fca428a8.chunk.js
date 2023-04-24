@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmy_cv=self.webpackChunkmy_cv||[]).push([[83],{120:function(n,e,r){r.r(e),r.d(e,{default:function(){return u}});r(791),r.p;var c=r(184),u=function(n){var e=n.children;return(0,c.jsx)(c.Fragment,{children:e})}}}]);
+//# sourceMappingURL=83.fca428a8.chunk.js.map
