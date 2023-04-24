@@ -2,7 +2,6 @@ import React, { lazy } from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import MainRouter from 'main';
-import Header from 'layout/header';
 
 const Styling = lazy(() => import('styling'));
 

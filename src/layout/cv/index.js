@@ -3,7 +3,7 @@ import "./index.less";
 import React from "react";
 import Social from "./social";
 import { Tabs } from 'antd';
-import { CodeFilled, FundFilled, IdcardFilled, ProjectFilled, UserOutlined } from "@ant-design/icons";
+import { CodeFilled, FundFilled, IdcardFilled, ProjectFilled } from "@ant-design/icons";
 import Profile from "./tabs/profile";
 import WorkExperience from "./tabs/work-experience";
 import Projects from "./tabs/projects";
