@@ -22,6 +22,11 @@ const MainRouter = () => {
       element: <CV />,
       errorElement: <ErrorPage />,
     },
+    {
+      path: "/my-cv/",
+      element: <CV />,
+      errorElement: <ErrorPage />,
+    },
   ]);
   return (
     <React.StrictMode>
