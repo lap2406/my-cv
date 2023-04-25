@@ -1,7 +1,7 @@
 {
   "name": "my-cv",
   "version": "0.1.0",
-  "homepage": "https://lap2406.github.io/my-cv/",
+  "homepage": "./",
   "private": true,
   "dependencies": {
     "@ant-design/icons": "^5.0.1",
@@ -9,6 +9,9 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "antd": "^5.4.4",
+    "env-cmd": "^10.1.0",
+    "firebase": "^9.20.0",
+    "fs": "^0.0.1-security",
     "html-webpack-plugin": "^5.5.0",
     "less-loader": "^11.1.0",
     "moment": "^2.29.4",
@@ -25,7 +28,7 @@
     "start": "PORT=3335 react-app-rewired start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "build": "react-scripts build",
+    "build": "node ./update-build.js && env-cmd -f .env react-app-rewired build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

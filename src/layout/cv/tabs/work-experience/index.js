@@ -30,7 +30,7 @@ const WorkExperience = () => {
 ]
 
   return (
-    <div className="h-full w-full overflow-hidden">
+    <div className="h-full w-full overflow-hidden pt-4">
       <div className="intro-x h-full">
         <div className="text-base font-normal h-full grid grid-cols-1 justify-center items-center w-full">
         <Timeline
