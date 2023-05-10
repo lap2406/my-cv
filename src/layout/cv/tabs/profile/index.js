@@ -22,7 +22,7 @@ const Profile = () => {
     <div className="overflow-hidden">
       <div className="intro-x">
         <div className="flex justify-center items-center gap-5 mb-4">
-          <div className="">
+          <div className="28">
             <Avatar size={{ xs: 75, sm: 100, md: 120, lg: 150, xl: 150 }} src={data.avatar} />
           </div>
           <div className="">

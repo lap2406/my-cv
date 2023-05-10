@@ -19,12 +19,12 @@ const Social = () => {
         <div className="avatar blur-none group-hover:blur-sm transition ease-in-out delay-150 avatar w-full h-full bg-cover">
           {/* <Image src={avatarImg} /> */}
         </div>
-        <div className="flex absolute -bottom-10 translate-y-6 group-hover:-translate-y-14 justify-center gap-4 w-full  transition ease-in-out delay-150">
+        <div className="flex absolute -bottom-10 translate-y-6 group-hover:-translate-y-32 justify-center gap-4 w-full  transition ease-in-out delay-150">
           <div className="w-10 cursor-pointer" onClick={() => handleSocial("facebook")}>
-            <img className=" text-white" src={facebookIcon} alt="" />
+            <img className=" text-black" src={facebookIcon} alt="" />
           </div>
           <div className="w-10 cursor-pointer" onClick={() => handleSocial("github")}>
-            <img className=" text-white" src={githubIcon} alt="" />
+            <img className=" text-black" src={githubIcon} alt="" />
           </div>
         </div>
       </div>
